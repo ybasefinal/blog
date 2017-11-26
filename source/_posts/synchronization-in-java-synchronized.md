@@ -5,7 +5,7 @@ tags: 多线程
 ---
 翻译自：http://javarevisited.blogspot.ca/2011/04/synchronization-in-java-synchronized.html
 
-多线程和同步对于每个Java程序员来说都是一个十分重要的话题。拥有不错的多线程，同步，和线程安全方面的知识可以让你走在其他开发者的前面，但同时，这些概念也并不容易掌握。事实上想要写出正确的并发代码是一件非常困难的事情，就算是Java提供了一些内建的同步工具也一样。在这篇Java同步教程中我们将学习Java同步的意义，为什么Java需要同步，什么是Java同步关键字，使用**Java同步方法和代码块**的示例，当多线程代码缺失了同步结构的时候会发生什么，可以避免错误的小提示，while locking critical section in Java以及一些**Java同步的重点**。
+多线程和同步对于每个Java程序员来说都是一个十分重要的话题。拥有不错的多线程，同步，和线程安全方面的知识可以让你走在其他开发者的前面，但同时，这些概念也并不容易掌握。事实上想要写出正确的并发代码是一件非常困难的事情，就算是Java提供了一些内建的同步工具也一样。在这篇Java同步教程中我们将学习Java同步的意义，为什么Java需要同步，什么是Java同步关键字，使用**Java同步方法和代码块**的示例，当多线程代码缺失了同步结构的时候会发生什么，可以避免错误的小提示，Java关键代码块以及一些**Java同步的重点**。
 
 因为Java提供了几种不同的结构来支持同步及锁，比如[volatile关键字](http://javarevisited.blogspot.sg/2011/06/volatile-keyword-java-example-tutorial.html)，atomic变量，通过java.util.concurrent.lock.Lock接口显式加锁以它们的实现，比如ReentrantLock和ReentrantReadWriteLock，这让理解同步与其它结构的区别甚至变得更为重要。
 
