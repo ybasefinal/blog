@@ -7,7 +7,7 @@ tags: 多线程
 
 多线程和同步对于每个Java程序员来说都是一个十分重要的话题。拥有不错的多线程，同步，和线程安全方面的知识可以让你走在其他开发者的前面，但同时，这些概念也并不容易掌握。事实上想要写出正确的并发代码是一件非常困难的事情，就算是Java提供了一些内建的同步工具也一样。在这篇Java同步教程中我们将学习Java同步的意义，为什么Java需要同步，什么是Java同步关键字，使用**Java同步方法和代码块**的示例，当多线程代码缺失了同步结构的时候会发生什么，可以避免错误的小提示，Java关键代码块以及一些**Java同步的重点**。
 
-因为Java提供了几种不同的结构来支持同步及锁，比如[volatile关键字](http://javarevisited.blogspot.sg/2011/06/volatile-keyword-java-example-tutorial.html)，atomic变量，通过java.util.concurrent.lock.Lock接口显式加锁以它们的实现，比如ReentrantLock和ReentrantReadWriteLock，这让理解同步与其它结构的区别甚至变得更为重要。
+因为Java提供了几种不同的结构来支持同步机制及锁，比如[volatile关键字](http://javarevisited.blogspot.sg/2011/06/volatile-keyword-java-example-tutorial.html)、atomic变量、使用java.util.concurrent.lock.Lock接口显式加锁及其实现如ReentrantLock和ReentrantReadWriteLock，这使得理解同步与其它结构的区别甚至变得更为重要。
 
 记住，想要写出正确的Java并发代码对于同步有一个清晰的认识是必不可少的，这可以避免出现诸如死锁，竞态条件，以及线程安全之类的多线程问题。我能肯定，从这篇**Java同步教程**学到的内容会对你有帮助。一旦你读完这篇教程，你可以继续阅读[Java Concurrency in Practice](http://aax-us-east.amazon-adsystem.com/x/c/QpQC-tXlTeDKCAMXSPGMSy4AAAFf98S7nAEAAAFKAekuM3w/http://www.amazon.com/dp/0321349601/ref=as_at?creativeASIN=0321349601&linkCode=w61&imprToken=1.rU4rorQqilq1xpB9NCpA&slotNum=0&tag=javamysqlanta-20)来进一步完善你的观念。这本书是每个Java开发者都必读的。
 
@@ -20,7 +20,7 @@ tags: 多线程
 
 
 # 为什么Java需要同步？
-如果你的代码在多线程环境中执行，你需要为对象做同步，就是那些在多个线程间共享的对象，以避免任何状态的败坏以及各种各样意想不到的行为。Java的同步只有共享对象是可变的时才需要。如果你的共享对象是只读的或者是[不可变对象](http://javarevisited.blogspot.com/2013/03/how-to-create-immutable-class-object-java-example-tutorial.html)，那么你不需要同步，尽管是在多个线程里运行。同样如果多个线程对共享对象所做的操作是所有线程都只读取值，那么你也不需要同步。JVM保证**同步代码同一时间只被一个线程执行**。
+如果你的代码在多线程环境中执行，你需要为对象做同步处理，就是那些在多个线程间共享的对象，以避免任何状态的败坏以及各种各样意想不到的行为。Java的同步只有共享对象是可变的时才需要。如果你的共享对象是只读的或者是[不可变对象](http://javarevisited.blogspot.com/2013/03/how-to-create-immutable-class-object-java-example-tutorial.html)，那么你不需要同步，尽管是在多个线程里运行。同样如果多个线程对共享对象所做的操作是所有线程都只读取值，那么你也不需要同步。JVM保证**同步代码同一时间只被一个线程执行**。
 
 概括地说，Java同步关键字提供下列并发编程的基本要素：
 
