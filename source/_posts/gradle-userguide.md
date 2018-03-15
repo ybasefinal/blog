@@ -3,6 +3,8 @@ title: Gradle 用户指南
 date: 2018-03-14 10:25:09
 tags: Gradle
 ---
+原文链接：https://docs.gradle.org/current/userguide/userguide.html
+
 Gradle 是一个专注于灵活性和性能的开源构建工具。Gradle 的构建脚本采用 Groovy 或 Kotlin DSL 编写。阅读 Gradle 特性来了解可以用 Gradle 来做什么。
 
 * **高度可定制** -- Gradle 以最基本的方式进行定制和扩展。

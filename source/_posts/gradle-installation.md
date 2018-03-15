@@ -3,6 +3,8 @@ title: Gradle 安装
 date: 2018-03-14 11:28:18
 tags: Gradle
 ---
+原文链接：https://docs.gradle.org/current/userguide/installation.html
+
 你可以在 Linux, MacOS 或 Windows 上安装 Gradle 构建工具。这篇文档涵盖了使用如 SKDMAN!, Homebrew, 或 Scoop 等包管理器来安装 Gradle，以及手动安装 Gradle 的过程。
 
 如果想要升级 Gradle，推荐使用 Gradle Wrapper。

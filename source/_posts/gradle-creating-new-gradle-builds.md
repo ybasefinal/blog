@@ -3,6 +3,8 @@ title: 生成新的 Gradle 构建
 date: 2018-03-14 12:26:08
 tags: Gradle
 ---
+原文链接： https://guides.gradle.org/creating-new-gradle-builds
+
 跟随这篇指南，你将会生成一个简单的 Gradle 项目，调用一些 Gradle 的基础命令，以及对 Gradle 如果管理项目有一个大致了解。
 
 ## 你将需要
